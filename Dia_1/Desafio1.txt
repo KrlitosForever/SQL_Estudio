@@ -1,0 +1,4 @@
+Hoy es tu primer dia como Analista de datos.
+Por lo que el departamento de recursos humanos esta solicitando la siguiente información.
+primer nombre, apellido y dirección de correo electrónico.
+

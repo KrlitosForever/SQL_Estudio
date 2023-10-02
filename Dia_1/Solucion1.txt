@@ -1,0 +1,9 @@
+La solucion es la siguiente:
+
+SELECT
+first_name,
+last_name,
+email
+FROM public.customer
+
+
