@@ -40,14 +40,18 @@ Existen variaciones en SQL siendo *PostgreSQL* el más cercano al estándar de *
 La palabra clave **SELECT** es una de las más básicas a la hora de consultar información en SQL. Éste comando selecciona toda la información de las columnas que necesitemos de la tabla. El caso más básico es seleccionar toda la información de la tabla como se aprecia en el ejemplo:
 
  ```SQL
- SELECT * FROM clientes
+ SELECT
+ *
+ FROM
+ clientes
  ```
 Un ejemplo más genérico sería 
 
  ```SQL
  SELECT 
  nombre_de_la_columna
- FROM nombre_de_la_tabla
+ FROM
+ nombre_de_la_tabla
  ```
 
 Para seleccionar multiples columnas de una tabla lo que debemos hacer es separarlas por coma (*,*), veamos un ejemplo
@@ -56,7 +60,8 @@ Para seleccionar multiples columnas de una tabla lo que debemos hacer es separar
  SELECT 
  nombre_de_la_columna1,
  nombre_de_la_columna2
- FROM nombre_de_la_tabla
+ FROM
+ nombre_de_la_tabla
  ```
 
 > [!NOTE]
