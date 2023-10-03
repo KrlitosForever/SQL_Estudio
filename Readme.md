@@ -216,5 +216,20 @@ Una forma simplificada de saber cuantas filas cuenta nuestra tabla sería:
 
 # Día 2
 
+## WHERE
+La palabra reservada **WHERE** nos permite filtrar la información en base a la condición que le otorguemos.
+Veamos como emplear el **WHERE**:
+
+  ```SQL
+ -- Forma de emplear el Where
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE condición
+ ```
+
+
 
 [^1]:Morteo, Bocalandro, Francisco, Nicolás (2004). Un enfoque práctico de SQL. Ediciones Cooperativas. ISBN 987-1076-61-4.
