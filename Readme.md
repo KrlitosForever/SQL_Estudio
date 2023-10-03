@@ -64,6 +64,9 @@ Para seleccionar multiples columnas de una tabla lo que debemos hacer es separar
  nombre_de_la_tabla
  ```
 
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio1.txt que se encuentra en la carpeta Día_1
+
 ## ORDER BY
 
 La palabra clave **ORDER BY** nos ayuda a ordenar nuestro resultado, ya sea de manera alfabética, numérica o cronológica dependiendo del tipo de dato por el cual se desea ordenar.
@@ -132,10 +135,9 @@ Siguiendo con el ejemplo anterior esta es la forma de ordenar en base a la colum
  nombre DESC,
  apellido
  ```
- 
 
-> [!NOTA]
-> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio1.txt que se encuentra en la carpeta Día_1
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio2.txt que se encuentra en la carpeta Día_1
 
 
 
