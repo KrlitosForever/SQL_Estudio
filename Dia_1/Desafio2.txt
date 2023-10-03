@@ -1,0 +1,3 @@
+Personal de marketing solicita el listado de clientes ordenados de manera descendente.
+Como segundo criterio solicitan que el apellido este ordenado de manera descendente también.
+

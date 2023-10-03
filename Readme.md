@@ -64,7 +64,77 @@ Para seleccionar multiples columnas de una tabla lo que debemos hacer es separar
  nombre_de_la_tabla
  ```
 
-> [!NOTE]
+## ORDER BY
+
+La palabra clave **ORDER BY** nos ayuda a ordenar nuestro resultado, ya sea de manera alfabética, numérica o cronológica dependiendo del tipo de dato por el cual se desea ordenar.
+Siguiendo con el ejemplo anterior esta es la forma de ordenar en base a la columna 1.
+
+```SQL
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ ORDER BY
+ nombre_de_la_columna1
+ ```
+ Ésta consulta producirá como resultado que se ordenara de manera alfabética con respecto a la columna 1
+
+ Podemos también ordenar de manera **DESC** *descendente* y **ASC** *ascendente*.
+ Los ejemplos Serian los siguientes
+
+ ```SQL
+ -- Ordenar de manera Descendente
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ ORDER BY
+ nombre_de_la_columna1 DESC
+ ```
+
+ ```SQL
+ -- Ordenar de manera Ascendente
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ ORDER BY
+ nombre_de_la_columna1 ASC
+ ```
+
+ Otra de las características de **ORDER BY** es que se pueden ordenar según el orden de la cascada, ejemplo
+
+ ```SQL
+ -- Ordenara por orden alfabético(ascendente) el nombre y luego el apellido
+ SELECT 
+ nombre,
+ apellido
+ FROM
+ clientes
+ ORDER BY
+ nombre,
+ apellido
+ ```
+
+ Otro ejemplo sería ordenar de manera descendente la primera columna para luego ordenar ascendente por la segunda
+
+  ```SQL
+ -- Ordenara por orden descendente el nombre y luego el apellido ascendente
+ SELECT 
+ nombre,
+ apellido
+ FROM
+ clientes
+ ORDER BY
+ nombre DESC,
+ apellido
+ ```
+ 
+
+> [!NOTA]
 > Momento de aplicar lo aprendido, es tiempo de resolver el Desafio1.txt que se encuentra en la carpeta Día_1
 
 
