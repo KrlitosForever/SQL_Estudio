@@ -1,0 +1,5 @@
+1.-Crear una lista de todos los clientes de los distintos distritos (sin repetir)
+2.-Cual fue la ultima fecha rentada (Un solo resultado)
+3.-Cuantas peliculas tiene la compañia
+4.-Cuantas apellidos distintos tienen los clientes
+

@@ -1,0 +1,6 @@
+SELECT DISTINCT
+amount
+FROM
+public.payment
+ORDER BY
+amount DESC

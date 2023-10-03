@@ -22,7 +22,8 @@ La base de datos con la que se esta trabajando se encuentra en la carpeta DB.
 
 # Día 1
 
-¿Qué significa SQL?
+**¿Qué significa SQL?**
+
 SQL (por sus siglas en inglés Structured Query Language; en español lenguaje de consulta estructurada) es un lenguaje específico de dominio, diseñado para administrar, y recuperar información de sistemas de gestión de bases de datos relacionales.[^1]
 
 La importancia de SQL es que nos permite interactuar con nuestra base de datos.
@@ -139,6 +140,81 @@ Siguiendo con el ejemplo anterior esta es la forma de ordenar en base a la colum
 > [!NOTE]
 > Momento de aplicar lo aprendido, es tiempo de resolver el Desafio2.txt que se encuentra en la carpeta Día_1
 
+## DISTINCT
+La palabra reservada **DISTINCT** nos entrega los valores no duplicados. Quiere decir que si un valor se repite muchas veces en la columna con **DISTINCT** solo lo mostrará solo una vez.
+Un ejemplo de ello sería:
+
+  ```SQL
+ -- Nos mostraría los nombres de los clientes sin duplicarlos
+ SELECT DISTINCT
+ nombre
+ FROM
+ clientes
+ ```
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio3.txt que se encuentra en la carpeta Día_1
+
+## LIMIT
+La palabra reservada **LIMIT** nos permite limitar la cantidad de resultados que necesitamos visualizar. Un ejemplo de ello sería:
+
+  ```SQL
+ -- Nos mostraría los "n" resultados que le solicitemos
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ LIMIT n
+ ```
+Además se puede complementar con otras palabras reservadas, haciendo presente que **LIMIT** siempre tendría que ubicarse al final de la consulta.
+Un ejemplo sería:
+
+  ```SQL
+ -- Ordenara por orden nombre y muestra 4 resultados
+ SELECT 
+ nombre,
+ apellido
+ FROM
+ clientes
+ ORDER BY
+ nombre
+ LIMIT 4
+ ```
+
+## COUNT
+La función **COUNT** nos permite contar la cantidad de objetos que tenemos en un columna. Esto quiere decir que si queremos saber cuantas filas posee nuestra columna esta es una manera de saberlo.
+Un ejemplo de esta función sería:
+
+  ```SQL
+ -- Esta función nos indicara numéricamente cuantos nombres hay.
+ SELECT 
+ COUNT(nombre)
+ FROM
+ clientes
+ ```
+Si quisiéramos saber la cantidad de estos nombres sin repetir podríamos utilizar la siguiente combinación:
+
+  ```SQL
+ -- Esta función nos indicara la cantidad de nombres sin duplicar.
+ SELECT 
+ COUNT(DISTINCT nombre)
+ FROM
+ clientes
+ ```
+Una forma simplificada de saber cuantas filas cuenta nuestra tabla sería:
+
+  ```SQL
+ -- Ordenara por orden nombre y muestra 4 resultados
+ SELECT 
+ COUNT(*)
+ FROM
+ clientes
+ ```
+
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio_final.txt que se encuentra en la carpeta Día_1
+
+# Día 2
 
 
 [^1]:Morteo, Bocalandro, Francisco, Nicolás (2004). Un enfoque práctico de SQL. Ediciones Cooperativas. ISBN 987-1076-61-4.
