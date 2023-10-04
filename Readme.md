@@ -230,6 +230,106 @@ Veamos como emplear el **WHERE**:
  WHERE condición
  ```
 
+Un ejemplo practico sería buscar la cantidad de **CARLOS** que se encuentran en nuestra columna nombre:
+
+ ```SQL
+ -- Ejemplo practico de WHERE
+ SELECT 
+ nombre,
+ apellido
+ FROM
+ clietes
+ WHERE nombre = 'CARLOS'
+ ```
+
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio1.txt que se encuentra en la carpeta Día_2
+
+Los Operadores que se pueden ocupar con **WHERE** son los siguientes:
+
+``` 
+1.- >
+2.- <
+3.- >=
+4.- <=
+5.- =
+6.- !=
+```
+Otro caso de operadores son los siguientes:
+```SQL
+- is
+- is not 
+```
+En los que se pueden definir como:
+```SQL
+...
+WHERE columna_1 is null
+
+...
+WHERE columna_1 is not null
+```
+
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio1.txt que se encuentra en la carpeta Día_2
+
+Continuando con los operadores que podemos emplear se pueden generar condiciones en donde queremos aplicar más de una condición es por eso que existe **AND** y **OR**. Un ejemplo de ello 
+
+ ```SQL
+ -- Forma de emplear el Where y operador AND
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE condición 1
+ AND condición 2
+ ```
+
+```SQL
+ -- Forma de emplear el Where y operador OR
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE condición 1
+ OR condición 2
+ ```
+
+Inclusive puede ir más de un operador
+```SQL
+ -- Forma de emplear el Where con más de un operador
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE condición 1
+ AND condición 2
+ AND condición 3
+ ```
+
+Si La condición se esta ejerciendo sobre una misma columna puede aplicarse lo siguiente:
+```SQL
+ -- Forma de emplear el Where y operador OR
+ ...
+ WHERE Precio_producto = 10.99 OR 9.99 
+ ```
+
+También se puede hacer el uso de paréntesis para generar condiciones distintas de resultado, ejemplo:
+
+```SQL
+ -- Forma de emplear el Where con más de un operador
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE condición 1
+ AND (condición 2
+ OR condición 3)
+ ```
+
 
 
 [^1]:Morteo, Bocalandro, Francisco, Nicolás (2004). Un enfoque práctico de SQL. Ediciones Cooperativas. ISBN 987-1076-61-4.

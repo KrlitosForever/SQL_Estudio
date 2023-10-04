@@ -1,0 +1,2 @@
+1.- Cuantas compras realizo el cliente con id=100?
+2.- Cual es el apellido de la cliente que tiene nombre 'ERICA'

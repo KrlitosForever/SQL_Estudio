@@ -1,0 +1,15 @@
+1.-
+SELECT
+COUNT(*)
+FROM
+public.rental
+WHERE return_date is null
+
+2.-
+SELECT
+payment_id,
+amout
+FROM
+public.payment
+WHERE amount <= 2
+

@@ -1,0 +1,1 @@
+1.- Seleccione de la tabla payment los siguientes usuarios 322,346,354 y que el monto de las pagos menor a 2 y mayor a 10

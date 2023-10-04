@@ -1,0 +1,4 @@
+1.- Consultar el inventario por todos los arriendos que no han sido devueltos
+(return_date is null)
+
+2.- Informar todos los pagos realizados menoro igual a 2 dolares incluyendo el payment_id y amount
