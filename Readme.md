@@ -5,7 +5,7 @@ La base de datos con la que se esta trabajando se encuentra en la carpeta DB.
 
 # ÍNDICE
 - [Día 1](#día-1)
-- [Día 2]()
+- [Día 2](#día-2)
 - [Día 3]()
 - [Día 4]()
 - [Día 5]()
@@ -329,6 +329,8 @@ También se puede hacer el uso de paréntesis para generar condiciones distintas
  AND (condición 2
  OR condición 3)
  ```
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio2.txt que se encuentra en la carpeta Día_2
 
 
 
