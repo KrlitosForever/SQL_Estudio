@@ -337,7 +337,7 @@ La palabra reservada **BETWEEN** hace mención al rango de valores que necesitem
 Un ejemplo que podemos indicar es entre un rango de precios por ejemplo.
 
 ```SQL
- -- Forma de emplear el Where con más de un operador
+ -- Forma de emplear el BETWEEN
  SELECT 
  nombre_de_la_columna1,
  nombre_de_la_columna2
@@ -348,11 +348,19 @@ Un ejemplo que podemos indicar es entre un rango de precios por ejemplo.
 
 > [!IMPORTANT]
 > Cuando utilizamos **BETWEEN** los valores que indicamos los incluye. Quiere decir que en el ejemplo anterior los resultados que nos proporcionará incluirán el 10 y el 35.
-> Para no considerar los valores 10 y 35 deberemos hacer lo siguiente:
-> ```SQL
-> WHERE precio NOT BETWEEN 10 AND 35
-> ``` 
 
+Para no considerar los valores 10 y 35 deberemos hacer lo siguiente:
+```SQL
+ -- Forma de emplear NOT BETWEEN
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE precio NOT BETWEEN 10 AND 35
+``` 
+> [!IMPORTANT]
+> Cuando utilizamos **NOT BETWEEN** los valores que indicamos no estarán incluidos en el rango de resultados.
 
 
 
