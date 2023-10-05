@@ -350,7 +350,8 @@ Un ejemplo que podemos indicar es entre un rango de precios por ejemplo.
 > Cuando utilizamos **BETWEEN** los valores que indicamos los incluye. Quiere decir que en el ejemplo anterior los resultados que nos proporcionará incluirán el 10 y el 35.
 > Para no considerar los valores 10 y 35 deberemos hacer lo siguiente:
 > ```SQL
-> WHERE precio NOT BETWEEN 10 AND 35``` 
+> WHERE precio NOT BETWEEN 10 AND 35
+> ``` 
 
 
 
