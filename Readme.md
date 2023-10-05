@@ -332,6 +332,27 @@ También se puede hacer el uso de paréntesis para generar condiciones distintas
 > [!NOTE]
 > Momento de aplicar lo aprendido, es tiempo de resolver el Desafio2.txt que se encuentra en la carpeta Día_2
 
+## BETWEEN
+La palabra reservada **BETWEEN** hace mención al rango de valores que necesitemos.
+Un ejemplo que podemos indicar es entre un rango de precios por ejemplo.
+
+```SQL
+ -- Forma de emplear el Where con más de un operador
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE precio BETWEEN 10 AND 35
+ ```
+
+> [!IMPORTANT]
+> Cuando utilizamos **BETWEEN** los valores que indicamos los incluye. Quiere decir que en el ejemplo anterior los resultados que nos proporcionará incluirán el 10 y el 35.
+> Para no considerar los valores 10 y 35 deberemos hacer lo siguiente:
+> ```SQL
+> WHERE precio NOT BETWEEN 10 AND 35``` 
+
+
 
 
 [^1]:Morteo, Bocalandro, Francisco, Nicolás (2004). Un enfoque práctico de SQL. Ediciones Cooperativas. ISBN 987-1076-61-4.
