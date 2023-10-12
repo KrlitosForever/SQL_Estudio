@@ -270,7 +270,7 @@ WHERE columna_1 is not null
 ```
 
 > [!NOTE]
-> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio1.txt que se encuentra en la carpeta Día_2
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio2.txt que se encuentra en la carpeta Día_2
 
 Continuando con los operadores que podemos emplear se pueden generar condiciones en donde queremos aplicar más de una condición es por eso que existe **AND** y **OR**. Un ejemplo de ello 
 
@@ -330,7 +330,7 @@ También se puede hacer el uso de paréntesis para generar condiciones distintas
  OR condición 3)
  ```
 > [!NOTE]
-> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio2.txt que se encuentra en la carpeta Día_2
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio3.txt que se encuentra en la carpeta Día_2
 
 ## BETWEEN
 La palabra reservada **BETWEEN** hace mención al rango de valores que necesitemos.
@@ -379,7 +379,34 @@ Esto también aplica para fechas, acá se dejan dos ejemplos para fecha:
  nombre_de_la_columna2
  FROM
  nombre_de_la_tabla
- WHERE fecha_de_ingreso NOT BETWEEN 2005-01-01' AND '2005-03-15'
+ WHERE fecha_de_ingreso NOT BETWEEN '2005-01-01' AND '2005-03-15'
 ``` 
+> [!NOTE]
+> Momento de aplicar lo aprendido, es tiempo de resolver el Desafio4.txt que se encuentra en la carpeta Día_2
+
+## IN
+La palabra reservada **IN** se utilizara para seleccionar más de un elemento por medio de una lista.
+Un ejemplo de ello sería:
+
+```SQL
+ -- Forma de emplear IN con texto
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE nombre IN ('Carlos','Mauricio','Daniel','Luis')
+
+  -- Forma de emplear IN con números
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE años IN (18,22,33,36)
+``` 
+
+
+
 
 [^1]:Morteo, Bocalandro, Francisco, Nicolás (2004). Un enfoque práctico de SQL. Ediciones Cooperativas. ISBN 987-1076-61-4.
