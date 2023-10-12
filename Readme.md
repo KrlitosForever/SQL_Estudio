@@ -362,6 +362,24 @@ Para no considerar los valores 10 y 35 deberemos hacer lo siguiente:
 > [!IMPORTANT]
 > Cuando utilizamos **NOT BETWEEN** los valores que indicamos no estarán incluidos en el rango de resultados.
 
+Esto también aplica para fechas, acá se dejan dos ejemplos para fecha:
 
+```SQL
+ -- Forma de emplear BETWEEN en fechas
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE fecha_de_ingreso BETWEEN '2005-01-01' AND '2005-03-15'
+ 
+ -- Forma de emplear NOT BETWEEN en fechas
+ SELECT 
+ nombre_de_la_columna1,
+ nombre_de_la_columna2
+ FROM
+ nombre_de_la_tabla
+ WHERE fecha_de_ingreso NOT BETWEEN 2005-01-01' AND '2005-03-15'
+``` 
 
 [^1]:Morteo, Bocalandro, Francisco, Nicolás (2004). Un enfoque práctico de SQL. Ediciones Cooperativas. ISBN 987-1076-61-4.
